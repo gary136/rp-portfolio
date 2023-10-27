@@ -1,7 +1,137 @@
-<!-- pages/templates/pages/home.html -->
-
 {% extends "base.html" %}
 
 {% block page_content %}
-    <h1>Hello, World!</h1>
+    <style>
+        /* Page Background Color */
+        body {
+            background-color: #ffffff; /* white dove */
+        }
+
+        /* Card Background Color */
+        .card {
+            background-color: #FFE8D1; /* White card background color */
+        }
+
+        /* Header and Tab Colors */
+        .nav-tabs .nav-link {
+            background-color: #568EA3; /* Blue color for tabs */
+            color: #fff; /* Text color for tabs */
+        }
+
+        /* Active Tab Color */
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            background-color: #568EA3; /* Darker blue for active tab */
+        }
+
+        /* Text Color */
+        h2, p {
+            color: #333; /* Dark gray text color */
+        }
+
+        /* Link Color */
+        a {
+            color: #007bff; /* Blue link color */
+        }
+        
+        /* Margin on Top */
+        .page-content {
+            margin-top: 20px; /* You can adjust the margin size as needed */
+        }
+    </style>
+    <div class="container page-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects" data-toggle="tab">Projects</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <!-- Personal Information -->
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Hung-Ting Lee</h2>
+                        <p>An aspiring Master of Computer Engineering student at Virginia Tech.
+                            <br>
+                            GitHub: <a href="https://github.com/gary136" target="_blank">https://github.com/gary136</a>
+                            <br>
+                            Self-starter, quick-learner, avid hiker and team player.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Programming Languages and Skills -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h4>Programming Languages</h4>
+                                <ul>
+                                    <li>C/C++</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>TypeScript</li>
+                                    <li>AngularJS</li>
+                                    <li>Django</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Services and Systems -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h4>Cloud Services / Systems</h4>
+                                <ul>
+                                    <li>AWS</li>
+                                    <li>Git</li>
+                                    <li>GCP (Google Cloud Platform)</li>
+                                    <li>Docker</li>
+                                    <li>Kubernetes</li>
+                                    <li>Linux/Unix</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Others -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h4>Others</h4>
+                                <ul>
+                                    <li>CI/CD (Continuous Integration/Continuous Deployment)</li>
+                                    <li>Automated Testing</li>
+                                    <li>Kanban</li>
+                                    <li>Agile</li>
+                                    <li>Scrum</li>
+                                    <li>Software Development Lifecycle (SDLC)</li>
+                                    <li>Full-Stack Development</li>
+                                    <li>UI (User Interface) Development</li>
+                                    <li>Version Control</li>
+                                    <li>DevOps (Development and Operations)</li>
+                                    <li>Unit Tests</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="projects">
+                <!-- Content for the "Projects" tab goes here -->
+            </div>
+        </div>
+    </div>
 {% endblock page_content %}
